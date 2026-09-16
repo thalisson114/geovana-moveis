@@ -143,13 +143,14 @@ h1, h2, h3, h4, p, blockquote, figure { margin: 0; }
 .btn--primary {
   background: var(--dark); color: #fff;
   box-shadow: 0 10px 26px rgba(27, 23, 18, .28);
+  isolation: isolate;
 }
 .btn--primary::before {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(120deg, var(--amber-deep), var(--amber) 45%, #ff4d6d);
   transform: translateY(101%);
   transition: transform .45s var(--ease);
-  z-index: 0;
+  z-index: -1;
 }
 .btn--primary > * { position: relative; z-index: 1; }
 .btn--primary:hover::before { transform: translateY(0); }
@@ -828,7 +829,7 @@ h1, h2, h3, h4, p, blockquote, figure { margin: 0; }
 .form__note { text-align: center; font-size: .8rem; color: var(--ink-mute); margin-top: 14px; }
 
 /* Mapa */
-.mapa { margin-top: clamp(36px, 5vw, 56px); }
+.mapa { margin-top: clamp(36px, 5vw, 56px); scroll-margin-top: 90px; }
 .mapa__head {
   display: flex; align-items: flex-end; justify-content: space-between;
   gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
@@ -903,6 +904,13 @@ h1, h2, h3, h4, p, blockquote, figure { margin: 0; }
   .contato__grid { grid-template-columns: 1fr; }
   .galeria { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Menu mais compacto em telas de notebook pequenas */
+@media (min-width: 861px) and (max-width: 1120px) {
+  .nav__link { padding: 9px 10px; font-size: .87rem; }
+  .nav__link--cta { padding: 10px 16px; }
+  .brand__text { font-size: 1.12rem; }
 }
 
 @media (max-width: 860px) {
