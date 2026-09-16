@@ -754,6 +754,28 @@ h1, h2, h3, h4, p, blockquote, figure { margin: 0; }
 }
 .cta__inner p { color: rgba(255,255,255,.78); margin-bottom: 30px; }
 
+/* ============================ REGIÕES ATENDIDAS ============================ */
+.regioes { background: linear-gradient(180deg, var(--bg-alt), var(--bg)); }
+.section__head--center { margin-left: auto; margin-right: auto; text-align: center; }
+.regioes__lista {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 12px; max-width: 820px; margin: 0 auto 26px;
+}
+.regioes__lista li {
+  padding: 10px 22px; border-radius: 999px;
+  background: #fff; border: 1.5px solid var(--line);
+  font-weight: 600; font-size: .95rem; color: var(--ink-soft);
+  box-shadow: var(--shadow-sm);
+  transition: transform .4s var(--ease), border-color .3s, color .3s, background .3s;
+}
+.regioes__lista li:hover {
+  transform: translateY(-4px) scale(1.04);
+  border-color: var(--amber); background: var(--dark); color: #fff;
+}
+.regioes__nota { text-align: center; color: var(--ink-mute); font-size: .95rem; }
+.regioes__nota a { color: var(--amber-deep); font-weight: 600; }
+.regioes__nota a:hover { text-decoration: underline; }
+
 /* ============================ CONTATO ============================ */
 .contato { background: var(--bg-alt); }
 .contato__grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(36px, 5vw, 66px); align-items: start; }
