@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    GEOVANA MÓVEIS — Interações e animações
    ========================================================================== */
 (function () {
@@ -401,7 +401,7 @@
   var form = document.getElementById("formContato");
   if (form) {
     // Configura aqui seu número (DDI + DDD + número, sem espaços)
-    var WHATSAPP_NUMERO = "553184539177";
+    var WHATSAPP_NUMERO = "5531984539177";
 
     function showError(field, show) {
       var wrap = field.closest(".form__field");

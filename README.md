@@ -41,13 +41,13 @@ O deploy acontece sozinho em ~1 minuto.
 No `index.html`, troque o link do botão flutuante:
 
 ```html
-<a href="https://wa.me/553184539177?text=..." class="whatsapp">
+<a href="https://wa.me/5531984539177?text=..." class="whatsapp">
 ```
 
 E no `js/main.js`:
 
 ```js
-var WHATSAPP_NUMERO = "553184539177";
+var WHATSAPP_NUMERO = "5531984539177";
 ```
 
 Formato: DDI + DDD + número, sem espaços ou símbolos (ex.: Curitiba `5541`...).
@@ -102,7 +102,7 @@ No `index.html`:
 
 ### 6. Redes sociais
 O ícone do Instagram aponta para `instagram.com/geovannamoveisplanejados`
-e o do WhatsApp para o número `(31) 8453-9177`. Não há Facebook ainda —
+e o do WhatsApp para o número `(31) 98453-9177`. Não há Facebook ainda —
 quando criar, basta readdicionar o ícone na seção de contato.
 
 ## Recursos e animações inclusos
