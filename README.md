@@ -16,9 +16,24 @@ marcenaria/
 
 ## Como visualizar
 
-Duplo clique no `index.html` ou suba a pasta para qualquer hospedagem
-(Netlify, Vercel, HostGator etc.). As fontes vêm do Google Fonts; se ficar
-offline, o site usa fontes do sistema automaticamente.
+**Site no ar (URL oficial):** https://geovanamoveis.vercel.app
+
+Hospedado gratuitamente na **Vercel** (HTTPS automático, CDN global). O site
+também fica disponível em https://thalisson114.github.io/geovana-moveis/
+(GitHub Pages, espelho), mas a URL de divulgação é a da Vercel.
+
+### Atualizar o site
+Qualquer commit enviado para a branch `main` do GitHub re-publica
+automaticamente **ambos** (Vercel e GitHub Pages). Não precisa rodar build:
+é um site estático.
+
+Para publicar mudanças locais:
+```
+git add -A
+git commit -m "sua mensagem"
+git push
+```
+O deploy acontece sozinho em ~1 minuto.
 
 ## Personalizações principais
 
