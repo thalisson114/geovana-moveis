@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geovana Móveis — Marcenaria de Móveis Planejados Sob Medida</title>
+  <meta name="description" content="Geovana Móveis — marcenaria de móveis planejados sob medida. Cozinhas, dormitórios, home office e ambientes corporativos com projeto 3D, produção própria e instalação especializada." />
+  <meta name="theme-color" content="#1a1109" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Geovana Móveis — Móveis Planejados Sob Medida" />
+  <meta property="og:description" content="Marcenaria artesanal com tecnologia. Projetamos, produzimos e instalamos móveis planejados sob medida." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <!-- Favicon (SVG inline via data URI) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231a1109'/%3E%3Cpath d='M28 70V34l22-12 22 12v36' fill='none' stroke='%23ff8a1e' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 70V50h20v20' fill='none' stroke='%23a8efe8' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================= PRELOADER ======================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">
+      <svg viewBox="0 0 100 100" width="72" height="72">
+        <path d="M28 70V34l22-12 22 12v36" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="preloader__house"/>
+        <path d="M40 70V50h20v20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="preloader__door"/>
+      </svg>
+    </div>
+    <div class="preloader__name">Geovana Móveis</div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <!-- ======================= SCROLL PROGRESS ======================= -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ======================= CUSTOM CURSOR ======================= -->
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor cursor--ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ======================= HEADER / NAV ======================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="brand" aria-label="Geovana Móveis — Página inicial">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <path d="M28 70V34l22-12 22 12v36" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M40 70V50h20v20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">Geovana<span>Móveis</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <button class="nav__close" id="navClose" aria-label="Fechar menu">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li><a href="#processo" class="nav__link">Processo</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal" data-reveal>
+            <span class="eyebrow__dot"></span> Marcenaria de móveis planejados
+          </span>
+
+          <h1 class="hero__title">
+            <span class="line"><span>Móveis sob medida</span></span>
+            <span class="line"><span>que transformam</span></span>
+            <span class="line line--accent"><span>seu espaço.</span></span>
+          </h1>
+
+          <p class="hero__text reveal" data-reveal>
+            Na <strong>Geovana Móveis</strong>, unimos marcenaria artesanal e tecnologia de projeto 3D
+            para criar ambientes planejados impecáveis — da primeira ideia à instalação final.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal>
+            <a href="#contato" class="btn btn--primary" data-magnetic>
+              Solicitar orçamento
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#projetos" class="btn btn--ghost">Ver projetos</a>
+          </div>
+
+          <ul class="hero__stats reveal" data-reveal>
+            <li>
+              <span class="stat" data-count="15">0</span><span class="stat__plus">+</span>
+              <small>Anos de ofício</small>
+            </li>
+            <li>
+              <span class="stat" data-count="850">0</span><span class="stat__plus">+</span>
+              <small>Projetos entregues</small>
+            </li>
+            <li>
+              <span class="stat" data-count="100">0</span><span class="stat__plus">%</span>
+              <small>Sob medida</small>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-reveal>
+          <div class="hero__card hero__card--main wood wood--walnut">
+            <img class="photo" src="assets/hero-main.webp" alt="Cozinha planejada moderna com ilha e armários sob medida" loading="eager" width="1024" height="682" />
+            <span class="hero__card-tag">Cozinha planejada</span>
+            <span class="hero__card-label">Linhas retas · MDF premium · Ferragens Blum</span>
+          </div>
+          <div class="hero__card hero__card--float1 wood wood--oak">
+            <img class="photo" src="assets/hero-closet.webp" alt="Dormitório com guarda-roupa planejado" loading="lazy" width="1024" height="768" />
+            <span class="hero__card-tag">Dormitório</span>
+          </div>
+          <div class="hero__card hero__card--float2 wood wood--dark">
+            <img class="photo" src="assets/hero-office.webp" alt="Home office com móveis planejados e janela" loading="lazy" width="1024" height="682" />
+            <span class="hero__card-tag">Home office</span>
+          </div>
+          <div class="hero__badge">
+            <span class="hero__badge-num">4,9</span>
+            <span class="hero__badge-stars" aria-hidden="true">★★★★★</span>
+            <small>Avaliação dos clientes</small>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ======================= MARQUEE ======================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Madeira maciça</span><span class="marquee__sep">◆</span>
+        <span>MDF premium</span><span class="marquee__sep">◆</span>
+        <span>Projeto 3D</span><span class="marquee__sep">◆</span>
+        <span>Ferragens Blum</span><span class="marquee__sep">◆</span>
+        <span>Acabamento premium</span><span class="marquee__sep">◆</span>
+        <span>Instalação especializada</span><span class="marquee__sep">◆</span>
+        <span>Garantia de 5 anos</span><span class="marquee__sep">◆</span>
+        <!-- duplicado para loop infinito -->
+        <span>Madeira maciça</span><span class="marquee__sep">◆</span>
+        <span>MDF premium</span><span class="marquee__sep">◆</span>
+        <span>Projeto 3D</span><span class="marquee__sep">◆</span>
+        <span>Ferragens Blum</span><span class="marquee__sep">◆</span>
+        <span>Acabamento premium</span><span class="marquee__sep">◆</span>
+        <span>Instalação especializada</span><span class="marquee__sep">◆</span>
+        <span>Garantia de 5 anos</span><span class="marquee__sep">◆</span>
+      </div>
+    </div>
+
+    <!-- ======================= SOBRE ======================= -->
+    <section class="section sobre" id="sobre">
+      <div class="container sobre__grid">
+        <div class="sobre__visual reveal" data-reveal>
+          <div class="sobre__img wood wood--amber">
+            <img class="photo" src="assets/sobre.jpg" alt="Interior de marcenaria com ferramentas e madeira" loading="lazy" width="1024" height="695" />
+            <span class="sobre__img-label">Nossa marcenaria</span>
+          </div>
+          <div class="sobre__badge">
+            <span class="sobre__badge-num">15</span>
+            <small>anos<br>de história</small>
+          </div>
+        </div>
+
+        <div class="sobre__content">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Sobre nós</span>
+          <h2 class="section__title reveal" data-reveal>
+            Marcenaria de verdade,<br>feita para durar gerações.
+          </h2>
+          <p class="reveal" data-reveal>
+            Nascemos do desejo de criar móveis que combinem design, funcionalidade e durabilidade.
+            Cada projeto da Geovana Móveis é desenhado sob medida, produzido em nossa marcenaria
+            própria com madeira selecionada e instalado por uma equipe especializada.
+          </p>
+          <ul class="sobre__list">
+            <li class="reveal" data-reveal>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Projeto autoral em 3D antes da produção</span>
+            </li>
+            <li class="reveal" data-reveal>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Materiais premium e acabamento impecável</span>
+            </li>
+            <li class="reveal" data-reveal>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Prazo cumprido e equipe própria de instalação</span>
+            </li>
+            <li class="reveal" data-reveal>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Garantia de 5 anos em todos os projetos</span>
+            </li>
+          </ul>
+          <a href="#contato" class="btn btn--primary reveal" data-reveal data-magnetic>Fale com um especialista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERVIÇOS ======================= -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Serviços</span>
+          <h2 class="section__title reveal" data-reveal>Ambientes planejados<br>para cada cômodo</h2>
+          <p class="section__desc reveal" data-reveal>
+            Desenvolvemos projetos sob medida para residências, escritórios e comércios —
+            sempre com atenção aos detalhes que fazem a diferença no dia a dia.
+          </p>
+        </div>
+
+        <div class="servicos__grid">
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M6 20h36M16 40v-8h16v8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Cozinhas &amp; Áreas gourmet</h3>
+            <p>Gabinetes, ilhas e painéis otimizados com ergonomia e os melhores acabamentos.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M8 16v-4a2 2 0 012-2h28a2 2 0 012 2v4M8 16h32v22a2 2 0 01-2 2H10a2 2 0 01-2-2V16z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M18 40v-8h12v8" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
+            </span>
+            <h3>Dormitórios &amp; Closets</h3>
+            <p>Guarda-roupas, camas e closets aproveitam cada centímetro com elegância.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M6 12h24v20H6zM30 20h8l6 6v6h-14z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><circle cx="14" cy="38" r="3.4" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="34" cy="38" r="3.4" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
+            </span>
+            <h3>Home office</h3>
+            <p>Estações de trabalho funcionais com nichos, gavetas e gestão de cabos.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M10 6h28v36H10z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M10 14h28M18 42v-8h12v8M16 20h16M16 26h16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Salas &amp; Living</h3>
+            <p>Painéis para TV, estantes e racks que integram tecnologia e aconchego.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="3" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M8 24h32M24 8v32" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
+            </span>
+            <h3>Banheiros &amp; Lavabos</h3>
+            <p>Vãos e gabinetes planejados para ambientes úmidos com alta resistência.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <span class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M6 14h36v8H6zM10 22v16h28V22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M18 38v-6h12v6" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
+            </span>
+            <h3>Comercial &amp; Corporativo</h3>
+            <p>Lojas, escritórios e clínicas com móveis planejados para alto fluxo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROJETOS ======================= -->
+    <section class="section projetos" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Projetos</span>
+          <h2 class="section__title reveal" data-reveal>Nossa galeria de realizações</h2>
+          <p class="section__desc reveal" data-reveal>
+            Uma amostra de ambientes que projetamos e produzimos. Clique para ampliar.
+          </p>
+        </div>
+
+        <div class="filtros reveal" data-reveal role="tablist" aria-label="Filtrar projetos">
+          <button class="filtro is-active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+          <button class="filtro" data-filter="cozinha" role="tab" aria-selected="false">Cozinhas</button>
+          <button class="filtro" data-filter="dormitorio" role="tab" aria-selected="false">Dormitórios</button>
+          <button class="filtro" data-filter="sala" role="tab" aria-selected="false">Salas</button>
+          <button class="filtro" data-filter="corporativo" role="tab" aria-selected="false">Comercial</button>
+        </div>
+
+        <div class="galeria" id="galeria">
+          <figure class="galeria__item reveal" data-reveal data-cat="cozinha">
+            <div class="galeria__media wood wood--walnut">
+              <img class="photo" src="assets/g-cozinha-1.webp" alt="Cozinha gourmet planejada com ilha central" loading="lazy" width="1024" height="768" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Cozinha gourmet · Ilha central</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal galeria__item--wide" data-reveal data-cat="dormitorio">
+            <div class="galeria__media wood wood--oak">
+              <img class="photo" src="assets/g-casal.webp" alt="Suíte master com guarda-roupa planejado amadeirado" loading="lazy" width="1024" height="683" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Suíte master · Guarda-roupa sob medida</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal" data-reveal data-cat="sala">
+            <div class="galeria__media wood wood--dark">
+              <img class="photo" src="assets/g-sala-1.webp" alt="Sala de estar com móveis planejados e clarabóia" loading="lazy" width="1024" height="683" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Sala de estar · Painel e estantes</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal" data-reveal data-cat="corporativo">
+            <div class="galeria__media wood wood--amber">
+              <img class="photo" src="assets/g-escritorio.webp" alt="Escritório com mesa planejada e prateleiras organizadas" loading="lazy" width="1024" height="683" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Home office · Mesa e prateleiras</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal" data-reveal data-cat="dormitorio">
+            <div class="galeria__media wood wood--amber">
+              <img class="photo" src="assets/g-closet-2.webp" alt="Dormitório com closet integrado planejado" loading="lazy" width="1024" height="576" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Dormitório · Closet integrado</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal galeria__item--wide" data-reveal data-cat="cozinha">
+            <div class="galeria__media wood wood--dark">
+              <img class="photo" src="assets/g-cozinha-2.webp" alt="Cozinha planejada branca com armários até o teto" loading="lazy" width="1024" height="682" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Cozinha planejada · Branco premium</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal" data-reveal data-cat="sala">
+            <div class="galeria__media wood wood--oak">
+              <img class="photo" src="assets/g-sala-2.webp" alt="Living com mobiliário planejado integrado" loading="lazy" width="1024" height="576" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Living · Mobiliário integrado</figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal" data-reveal data-cat="corporativo">
+            <div class="galeria__media wood wood--walnut">
+              <img class="photo" src="assets/g-corporativo.webp" alt="Escritório corporativo com mesa de trabalho planejada" loading="lazy" width="1024" height="683" />
+              <span class="galeria__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <figcaption>Escritório corporativo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROCESSO ======================= -->
+    <section class="section processo" id="processo">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Como funciona</span>
+          <h2 class="section__title reveal" data-reveal>Do projeto à instalação,<br>em 4 etapas</h2>
+        </div>
+
+        <div class="processo__grid">
+          <article class="passo reveal" data-reveal>
+            <span class="passo__num">01</span>
+            <h3>Contato &amp; briefing</h3>
+            <p>Você nos conta sua necessidade, medidas e referências. Atendimento sem compromisso.</p>
+          </article>
+          <article class="passo reveal" data-reveal>
+            <span class="passo__num">02</span>
+            <h3>Projeto 3D</h3>
+            <p>Desenhamos seu ambiente em 3D com medição precisa. Você aprova antes de produzir.</p>
+          </article>
+          <article class="passo reveal" data-reveal>
+            <span class="passo__num">03</span>
+            <h3>Produção</h3>
+            <p>Fabricamos na nossa marcenaria com materiais premium e controle de qualidade.</p>
+          </article>
+          <article class="passo reveal" data-reveal>
+            <span class="passo__num">04</span>
+            <h3>Instalação</h3>
+            <p>Equipe própria instala tudo no prazo, com limpeza e garantia de 5 anos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= DEPOIMENTOS ======================= -->
+    <section class="section depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Depoimentos</span>
+          <h2 class="section__title reveal" data-reveal>O que dizem nossos clientes</h2>
+        </div>
+
+        <div class="slider reveal" data-reveal>
+          <div class="slider__track" id="sliderTrack">
+            <blockquote class="slide">
+              <p>"Fizeram toda a cozinha planejada e superou a expectativa. O projeto 3D ajudou a entender tudo antes. Acabamento impecável!"</p>
+              <footer>
+                <span class="slide__avatar">MR</span>
+                <span><strong>Mariana R.</strong><small>Cozinha gourmet · São Paulo</small></span>
+              </footer>
+            </blockquote>
+            <blockquote class="slide">
+              <p>"Profissionalismo do início ao fim. Cumpriram o prazo e a instalação foi limpa e rápida. Recomendo demais a Geovana Móveis."</p>
+              <footer>
+                <span class="slide__avatar">JS</span>
+                <span><strong>João S.</strong><small>Closet + dormitório · Campinas</small></span>
+              </footer>
+            </blockquote>
+            <blockquote class="slide">
+              <p>"Móveis do escritório ficaram perfeitos. Resistente, bonito e funcionais. Atendeu exatamente o que precisávamos para a equipe."</p>
+              <footer>
+                <span class="slide__avatar">AC</span>
+                <span><strong>André C.</strong><small>Projeto corporativo · São Paulo</small></span>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="slider__nav">
+            <button class="slider__btn" id="sliderPrev" aria-label="Depoimento anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="slider__btn" id="sliderNext" aria-label="Próximo depoimento">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CTA ======================= -->
+    <section class="cta">
+      <div class="container cta__inner reveal" data-reveal>
+        <h2 class="cta__title">Vamos planejar seu ambiente?</h2>
+        <p>Atendimento gratuito e sem compromisso. Resposta em até 1 dia útil.</p>
+        <a href="#contato" class="btn btn--primary btn--lg" data-magnetic>Solicitar orçamento agora</a>
+      </div>
+    </section>
+
+    <!-- ======================= CONTATO ======================= -->
+    <section class="section contato" id="contato">
+      <div class="container contato__grid">
+        <div class="contato__info">
+          <span class="eyebrow reveal" data-reveal><span class="eyebrow__dot"></span> Contato</span>
+          <h2 class="section__title reveal" data-reveal>Fale com a<br>Geovana Móveis</h2>
+          <ul class="contato__lista">
+            <li class="reveal" data-reveal>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h5l2 5-3 2a12 12 0 005 5l2-3 5 2v5a15 15 0 01-16-16z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+              <span><small>Telefone / WhatsApp</small><strong>(11) 99999-9999</strong></span>
+            </li>
+            <li class="reveal" data-reveal>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+              <span><small>E-mail</small><strong>contato@geovanamoveis.com.br</strong></span>
+            </li>
+            <li class="reveal" data-reveal>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/></svg></span>
+              <span><small>Endereço</small><strong>Rua das Marcenárias, 500 — São Paulo / SP</strong></span>
+            </li>
+            <li class="reveal" data-reveal>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7v5l4 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+              <span><small>Atendimento</small><strong>Seg a Sex, 8h–18h · Sáb, 9h–13h</strong></span>
+            </li>
+          </ul>
+          <div class="contato__socials reveal" data-reveal>
+            <a href="https://www.instagram.com/geovannamoveisplanejados/" target="_blank" rel="noopener" aria-label="Instagram da Geovana Móveis" data-magnetic>
+              <svg viewBox="0 0 24 24" width="19" height="19"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook da Geovana Móveis" data-magnetic>
+              <svg viewBox="0 0 24 24" width="19" height="19"><path d="M14 9h3V6h-3a4 4 0 00-4 4v2H8v3h2v6h3v-6h2.5l.5-3H13v-2a1 1 0 011-1z" fill="currentColor"/></svg>
+            </a>
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener" aria-label="WhatsApp da Geovana Móveis" data-magnetic>
+              <svg viewBox="0 0 24 24" width="19" height="19"><path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3zm5.3 12.5c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6a8 8 0 01-3-2.6c-.6-.8-1-1.6-1-2.4 0-.8.3-1.5.7-1.9.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.6.3.5.7 1 1.2 1.4.6.4 1 .6 1.3.7.2.1.4 0 .5-.1l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.2.3.4 0 .2 0 .4-.1.7z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" data-reveal id="formContato" novalidate>
+          <h3>Solicite seu orçamento</h3>
+          <div class="form__row">
+            <div class="form__field">
+              <input type="text" id="nome" name="nome" placeholder=" " required />
+              <label for="nome">Nome completo</label>
+              <span class="form__error" data-error-for="nome">Informe seu nome.</span>
+            </div>
+            <div class="form__field">
+              <input type="tel" id="telefone" name="telefone" placeholder=" " required />
+              <label for="telefone">Telefone / WhatsApp</label>
+              <span class="form__error" data-error-for="telefone">Informe seu telefone.</span>
+            </div>
+          </div>
+          <div class="form__field">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">E-mail</label>
+            <span class="form__error" data-error-for="email">Informe um e-mail válido.</span>
+          </div>
+          <div class="form__field">
+            <select id="ambiente" name="ambiente">
+              <option value="">Ambiente desejado</option>
+              <option>Cozinha / Área gourmet</option>
+              <option>Dormitório / Closet</option>
+              <option>Home office</option>
+              <option>Sala / Living</option>
+              <option>Banheiro / Lavabo</option>
+              <option>Comercial / Corporativo</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder=" "></textarea>
+            <label for="mensagem">Conte sobre seu projeto</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-magnetic>Enviar pelo WhatsApp</button>
+          <p class="form__note">Resposta em até 1 dia útil. Sem compromisso.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <path d="M28 70V34l22-12 22 12v36" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M40 70V50h20v20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">Geovana<span>Móveis</span></span>
+        </a>
+        <p>Marcenaria de móveis planejados sob medida. Projeto, produção e instalação com garantia de 5 anos.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Cozinhas</a></li>
+          <li><a href="#servicos">Dormitórios</a></li>
+          <li><a href="#servicos">Home office</a></li>
+          <li><a href="#servicos">Comercial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li>(11) 99999-9999</li>
+          <li>contato@geovanamoveis.com.br</li>
+          <li>São Paulo / SP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <p>© <span id="ano">2026</span> Geovana Móveis. Todos os direitos reservados.</p>
+        <p>Feito com dedicação em madeira nobre.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================= WHATSAPP FLUTUANTE ======================= -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." class="whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3zm5.3 12.5c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6a8 8 0 01-3-2.6c-.6-.8-1-1.6-1-2.4 0-.8.3-1.5.7-1.9.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.6.3.5.7 1 1.2 1.4.6.4 1 .6 1.3.7.2.1.4 0 .5-.1l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.2.3.4 0 .2 0 .4-.1.7z" fill="currentColor"/>
+    </svg>
+    <span class="whatsapp__pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- ======================= LIGHTBOX ======================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar imagem">
+      <svg viewBox="0 0 24 24" width="26" height="26"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox__content" id="lightboxContent"></div>
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
