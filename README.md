@@ -1,4 +1,4 @@
-# Geovana Móveis — Site institucional
+﻿# Geovana Móveis — Site institucional
 
 Site limpo, moderno e animado para marcenaria de móveis planejados. Totalmente
 autocontido: **não precisa de build, nem de servidor** — basta abrir o `index.html`.
@@ -26,13 +26,13 @@ offline, o site usa fontes do sistema automaticamente.
 No `index.html`, troque o link do botão flutuante:
 
 ```html
-<a href="https://wa.me/5511999999999?text=..." class="whatsapp">
+<a href="https://wa.me/553184539177?text=..." class="whatsapp">
 ```
 
 E no `js/main.js`:
 
 ```js
-var WHATSAPP_NUMERO = "5511999999999";
+var WHATSAPP_NUMERO = "553184539177";
 ```
 
 Formato: DDI + DDD + número, sem espaços ou símbolos (ex.: Curitiba `5541`...).
@@ -86,9 +86,9 @@ No `index.html`:
 ```
 
 ### 6. Redes sociais
-O ícone do Instagram já aponta para
-`instagram.com/geovannamoveisplanejados`. O do Facebook ainda está como
-`href="#"` — troque caso exista perfil.
+O ícone do Instagram aponta para `instagram.com/geovannamoveisplanejados`
+e o do WhatsApp para o número `(31) 8453-9177`. Não há Facebook ainda —
+quando criar, basta readdicionar o ícone na seção de contato.
 
 ## Recursos e animações inclusos
 
