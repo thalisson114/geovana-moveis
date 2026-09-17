@@ -10,7 +10,7 @@ marcenaria/
 ├── index.html          # Página única com todas as seções
 ├── css/styles.css      # Estilos, texturas de madeira e animações
 ├── js/main.js          # Interações (menu, slider, lightbox, formulário…)
-├── assets/             # 12 fotos de ambientes (CC0 / CC BY, baixadas do Openverse)
+├── assets/             # 12 fotos reais de trabalhos da Geovana Móveis (WebP)
 └── README.md           # Este arquivo
 ```
 
@@ -60,14 +60,11 @@ horário, depoimentos e descrições. As informações de contato aparecem em 3
 lugares (header/nav não, seção contato e rodapé) — use **Localizar/Substituir**.
 
 ### 3. Fotos dos projetos
-O site já vem com **12 fotos de ambientes** (cozinhas, dormitórios, salas, escritórios
-e oficina de marcenaria) baixadas do Openverse com licença livre (CC0 / CC BY 2.0).
-Elas estão na pasta `assets/` e são usadas no hero, na seção Sobre e na galeria.
+O site usa **12 fotos reais** dos trabalhos da Geovana Móveis (em `assets/`, formato WebP).
+Elas aparecem no hero, na seção Sobre e na galeria com filtros.
 
-Como são fotos de banco de imagens (não dos seus projetos reais), o ideal é
-troca-las pelas fotos dos seus trabalhos do Instagram:
-
-1. Coloque suas fotos em `assets/` (ex.: `assets/cozinha-1.jpg`).
+Para trocar uma foto:
+1. Coloque a nova imagem em `assets/` (ex.: `assets/cozinha-1.jpg`).
 2. No `index.html`, cada item da galeria tem uma linha como:
 
 ```html
