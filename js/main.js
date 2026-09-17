@@ -76,6 +76,17 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeNav();
   });
+  // Fecha o menu ao tocar/clicar no overlay (fora da gaveta)
+  document.addEventListener("click", function (e) {
+    if (!nav || !nav.classList.contains("is-open")) return;
+    if (nav.contains(e.target)) return;
+    if (navToggle && navToggle.contains(e.target)) return;
+    closeNav();
+  });
+  // Fecha o menu se a tela crescer além do breakpoint mobile
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 860) closeNav();
+  });
 
   /* ---------------------------------------------------------
      5. Reveal on scroll (Intersection Observer)
