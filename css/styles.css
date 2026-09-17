@@ -969,9 +969,16 @@ main section[id] { scroll-margin-top: 88px; }
   }
   body.nav-open { overflow: hidden; }
   body.nav-open::after {
-    content: ""; position: fixed; inset: 0; z-index: 940;
+    content: ""; position: fixed; inset: 0; z-index: 800;
     background: rgba(27,23,18,.45);
     animation: lbIn .3s;
+  }
+  /* Sem backdrop-filter no mobile: ele cria um containing block que
+     aprisiona a gaveta fixa do header (perdia altura e ficava sob o overlay) */
+  .header.is-scrolled {
+    background: rgba(250, 247, 241, .96);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
   .hero { min-height: auto; padding-top: 120px; padding-bottom: 64px; }
   .hero__visual { height: 360px; }
